@@ -1,0 +1,326 @@
+.canada-page {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.canada-content {
+  margin-top: 30px;
+}
+
+/* ===== HERO ===== */
+.canada-hero {
+  background: linear-gradient(135deg, #ff0000, #ffffff, #ff0000);
+  color: #1a1a2e;
+  padding: 60px 40px;
+  border-radius: 20px;
+  text-align: center;
+  margin-bottom: 50px;
+  box-shadow: 0 10px 40px rgba(0,0,0,0.15);
+}
+
+.canada-hero h2 {
+  font-size: 42px;
+  margin-bottom: 15px;
+  text-shadow: 0 2px 8px rgba(255,255,255,0.3);
+}
+
+.canada-hero p {
+  font-size: 20px;
+  opacity: 0.95;
+}
+
+/* ===== ESTADIOS ===== */
+.estadios-section, .ciudades-section {
+  margin-bottom: 50px;
+}
+
+.estadios-section h2, .ciudades-section h2 {
+  font-size: 32px;
+  color: #1e3a5f;
+  margin-bottom: 25px;
+  border-left: 6px solid #e94560;
+  padding-left: 15px;
+}
+
+.estadios-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+  gap: 30px;
+}
+
+.estadio-card {
+  background: white;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 6px 24px rgba(0,0,0,0.08);
+  transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.estadio-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 16px 48px rgba(0,0,0,0.15);
+}
+
+.estadio-imagen-container {
+  position: relative;
+  height: 220px;
+  overflow: hidden;
+  background: #f0f4f8;
+}
+
+.estadio-imagen {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.6s;
+}
+
+.estadio-card:hover .estadio-imagen {
+  transform: scale(1.05);
+}
+
+.estadio-badge {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  background: linear-gradient(135deg, #e94560, #c73652);
+  color: white;
+  padding: 8px 16px;
+  border-radius: 30px;
+  font-size: 14px;
+  font-weight: 700;
+  box-shadow: 0 4px 12px rgba(233, 69, 96, 0.4);
+}
+
+.estadio-info {
+  padding: 24px;
+}
+
+.estadio-info h3 {
+  font-size: 22px;
+  color: #1e3a5f;
+  margin-bottom: 6px;
+}
+
+.estadio-ciudad {
+  font-size: 16px;
+  color: #666;
+  margin-bottom: 8px;
+}
+
+.estadio-descripcion {
+  font-size: 15px;
+  color: #888;
+  margin-bottom: 12px;
+  line-height: 1.5;
+}
+
+.estadio-capacidad {
+  display: inline-block;
+  background: #f0f4f8;
+  padding: 6px 16px;
+  border-radius: 20px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #1e3a5f;
+}
+
+/* ===== CIUDADES ===== */
+.ciudades-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+  gap: 30px;
+}
+
+.ciudad-card {
+  background: white;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 6px 24px rgba(0,0,0,0.08);
+  transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.ciudad-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 16px 48px rgba(0,0,0,0.15);
+}
+
+.ciudad-imagen-container {
+  height: 200px;
+  overflow: hidden;
+}
+
+.ciudad-imagen {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.6s;
+}
+
+.ciudad-card:hover .ciudad-imagen {
+  transform: scale(1.05);
+}
+
+.ciudad-info {
+  padding: 24px;
+}
+
+.ciudad-info h3 {
+  font-size: 24px;
+  color: #1e3a5f;
+  margin-bottom: 6px;
+}
+
+.ciudad-poblacion {
+  font-size: 16px;
+  color: #666;
+  margin-bottom: 8px;
+}
+
+.ciudad-descripcion {
+  font-size: 15px;
+  color: #888;
+  margin-bottom: 14px;
+  line-height: 1.5;
+}
+
+.ciudad-atracciones {
+  border-top: 1px solid #f0f4f8;
+  padding-top: 14px;
+}
+
+.atracciones-titulo {
+  display: block;
+  font-size: 14px;
+  font-weight: 600;
+  color: #1e3a5f;
+  margin-bottom: 8px;
+}
+
+.atracciones-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.atraccion-tag {
+  background: #f0f4f8;
+  padding: 4px 14px;
+  border-radius: 20px;
+  font-size: 13px;
+  color: #1e3a5f;
+  font-weight: 500;
+  transition: all 0.3s;
+}
+
+.atraccion-tag:hover {
+  background: #e94560;
+  color: white;
+  transform: scale(1.05);
+}
+
+/* ===== FOOTER ===== */
+.footer {
+  background-color: #1a1a2e;
+  color: #ccc;
+  text-align: center;
+  padding: 30px 20px;
+  border-radius: 20px 20px 0 0;
+  margin-top: 30px;
+}
+
+.footer p {
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+
+.social {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.social-icons {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  font-size: 24px;
+}
+
+.social-icons span {
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+.social-icons span:hover {
+  transform: scale(1.2);
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 768px) {
+  .canada-hero h2 {
+    font-size: 28px;
+  }
+
+  .canada-hero p {
+    font-size: 17px;
+  }
+
+  .estadios-grid, .ciudades-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .estadio-imagen-container {
+    height: 180px;
+  }
+
+  .ciudad-imagen-container {
+    height: 160px;
+  }
+
+  .estadio-info h3 {
+    font-size: 20px;
+  }
+
+  .ciudad-info h3 {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .canada-hero {
+    padding: 40px 20px;
+  }
+
+  .canada-hero h2 {
+    font-size: 24px;
+  }
+
+  .estadio-imagen-container {
+    height: 150px;
+  }
+
+  .ciudad-imagen-container {
+    height: 140px;
+  }
+
+  .estadio-badge {
+    font-size: 12px;
+    padding: 6px 12px;
+    top: 10px;
+    right: 10px;
+  }
+
+  .estadio-info, .ciudad-info {
+    padding: 16px;
+  }
+
+  .estadio-info h3 {
+    font-size: 18px;
+  }
+
+  .ciudad-info h3 {
+    font-size: 18px;
+  }
+}

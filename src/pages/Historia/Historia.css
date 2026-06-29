@@ -1,0 +1,110 @@
+.historia-page {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.historia-content {
+  margin-top: 30px;
+}
+
+.historia-hero {
+  background: linear-gradient(135deg, #2c3e50, #3498db);
+  color: white;
+  padding: 50px 40px;
+  border-radius: 20px;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.historia-hero h2 {
+  font-size: 38px;
+  margin-bottom: 15px;
+}
+
+.historia-hero p {
+  font-size: 20px;
+  opacity: 0.9;
+}
+
+.max-ganadores {
+  margin-bottom: 50px;
+}
+
+.max-ganadores h2, .lista-campeones h2 {
+  font-size: 32px;
+  color: #1e3a5f;
+  margin-bottom: 25px;
+  border-left: 6px solid #e94560;
+  padding-left: 15px;
+}
+
+.ganadores-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.ganador-card {
+  background: white;
+  border-radius: 16px;
+  padding: 25px;
+  text-align: center;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+  transition: transform 0.3s;
+}
+
+.ganador-card:hover {
+  transform: translateY(-5px);
+}
+
+.ganador-pais {
+  display: block;
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #1e3a5f;
+}
+
+.ganador-titulos {
+  display: block;
+  font-size: 20px;
+  color: #e94560;
+}
+
+.campeones-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 15px;
+}
+
+.campeon-item {
+  background: white;
+  border-radius: 12px;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+  transition: transform 0.3s;
+}
+
+.campeon-item:hover {
+  transform: translateY(-3px);
+}
+
+.campeon-año {
+  font-weight: bold;
+  font-size: 18px;
+  color: #1e3a5f;
+}
+
+.campeon-pais {
+  font-size: 20px;
+  margin: 5px 0;
+}
+
+.campeon-sede {
+  font-size: 14px;
+  color: #666;
+}
